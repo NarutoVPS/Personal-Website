@@ -2,10 +2,6 @@
   font-family: 'Crimson Text', serif;
   font-size: 1.9rem;
   width: 80%;
-  border: 20px solid #bdc3c7;
-  padding: 20px;
-  margin: 80px auto;
-  max-width: 700px;
 }
 
 h1 {
@@ -16,15 +12,11 @@ h1 {
 }
 
 h4 {
-  font-size: 3.0rem;
+  font-size: 2.0rem;
   font-weight: bold;
   color: #2c3e50;
 }
 
-.quote{
-  border-left: 5px solid #bdc3c7;
-  padding-left: 5px;
-}
 
 hr {
   overflow: visible;
@@ -34,6 +26,7 @@ hr {
   border-width: 1px 0 0 0;
   border-radius: 20px;
 }
+
 hr:before {
   display: block;
   content: "";
@@ -44,3 +37,50 @@ hr:before {
   border-width: 0 0 1px 0;
   border-radius: 20px;
 } 
+
+hr {
+  width: 50%;
+}
+
+.jumbotron {
+  background-image: url("https://images.unsplash.com/photo-1587133599421-40a3cd84831b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.jumbotron h2{
+  margin-top:50%; 
+  left:10px;
+  color: #004040;
+ }
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+
+.thumbnail {
+  border: none;
+}
+
+.contact_projects {
+  background-color: #eee;
+}
+
+.social , .contact{
+  font-size: 2.0rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+
+#soon {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: darkmagenta;
+}

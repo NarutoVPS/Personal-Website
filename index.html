@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Welcome</title>
 </head>
@@ -26,48 +28,94 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Projects</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#project">Projects</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-    <div class="container toStyle">
+      <div class="jumbotron">
+        <div class="container insideJumbo">
+          <h2>WELCOME</h2>
+        </div>
+      </div>
+
+    <div class="container toStyle" id="about">
         <div class="row">
-            <div class="col-lg-12">
-                <div>
-                    <h1>Welcome</h1>
-            
-                    <p class="quote">You have reached my personal website.I am a 2nd year Engineering Student(CS). <br>This is a website that I am building from scratch as a project.
-                        I will be updating this as I get more comfortable with CSS and Javascript.
-                    </p>
-                    <p>Please note that I have recently started to learn full stack web development.
-                        <br>Hence this might not look impressive <strong>yet!</strong></p>
-                </div>
-                <hr>
-                <div>
-                    <h4>Interests</h4>
-            
-                    <p>My interests includes:</p>
-                    <ul>
-                        <li>Artificial Intelligence and Machine Learning</li>
-                        <li>Programming (In general)</li>
-                        <li>Web Development</li>
-                        <li>Automation</li>
-                    </ul>
-                </div>
-                <hr>
-                <div>
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="https://www.instagram.com/NarutoVPS">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/NarutoVPS?ref=bookmarks">Facebook</a></li>
-                        <li><a href="https://github.com/NarutoVPS">Github</a> (Will be updating repos.)</li>
-                        <li>My second website-><a href="http://www.narutovps.codes">Click here!</a></li>
-                    </ul>
-                </div>
+          <h1>About Me</h1>
+          <hr>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 ">
+            <div class="thumbnail">
+              <img src="img/Me.jpg" alt="Its me">
             </div>
+          </div>
+
+          <div class="col-lg-4 ">
+            <div>
+              <br>
+              <h4>HEY THERE!</h4>
+              <br>
+              <p class="quote">You have reached my personal website.I am a 2nd year Engineering Student(CS). <br>This is a website that I am building from scratch as a project.
+                I will be updating this as I get more comfortable with CSS and Javascript.
+              </p>
+              <p>My interests includes:</p>
+              <ul>
+                  <li>Artificial Intelligence and Machine Learning</li>
+                  <li>Programming (In general)</li>
+                  <li>Web Development</li>
+                  <li>Automation</li>
+              </ul>
+              <br>
+            </div>
+          </div>
+
+          <div class="col-lg-4 ">
+            <div>
+              <br>
+              <h4>HOBBIES</h4>
+              <br>
+              <p>When I am free and not coding, I may be doing any of the following activities:</p>
+              <ul>
+                  <li>I love watching <strong>anime.</strong></li>
+                  <li>I day dream a lot 😂.</li>
+                  <li>I sometimes take a <strong>walk</strong> (preferably alone)</li>
+              </ul>
+            </div>
+          </div>
         </div>
     </div>
+
+    <div class="contact_projects">
+      <div class="row" style="text-align: center;">
+        <h1>Stalk</h1>
+      </div>
+
+      <div class="contact">
+        <p>Feel free to stalk me on :-</p>
+        <ul class="social">
+          <li>
+            <a href="https://www.instagram.com/NarutoVPS"><i class="fab fa-instagram fa-3x"></i></a> <p>Instagram</p>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/NarutoVPS?ref=bookmarks"><i class="fab fa-facebook fa-3x"></i></a> <p>Facebook</p>
+          </li>
+          <li>
+            <a href="https://github.com/NarutoVPS"><i class="fab fa-github fa-3x"></i></a> <p>Github</p> 
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container project" id="project">
+      <div>
+        <h1>Projects</h1>
+        <h2 id="soon">Coming Soon!</h2>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>

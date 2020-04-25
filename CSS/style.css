@@ -84,3 +84,10 @@ hr {
   font-style: italic;
   color: darkmagenta;
 }
+
+
+.colorGame {
+  text-align: center;
+  font-size: 2.0rem;
+  font-weight: bold;
+}

@@ -45,6 +45,14 @@ hr {
 	background-color: #050301 !important;
 }
 
+.nav-link {
+	color: #050301 !important;
+}
+
+.navbar-brand {
+	color: #050301 !important;
+}
+
 .navbarAfter {
 	background-color: #004040 !important;
 }

@@ -7,3 +7,7 @@ $(function () {
         }
     });
 });
+
+$("img.img-thumbnail").on("click", function(){
+    alert("No touching !!!");
+});

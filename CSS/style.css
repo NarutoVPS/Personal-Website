@@ -1,7 +1,6 @@
-.toStyle {
+body {
   font-family: 'Crimson Text', serif;
-  font-size: 1.9rem;
-  width: 80%;
+  font-size: 1.3rem;
 }
 
 h1 {
@@ -9,6 +8,7 @@ h1 {
   font-weight: bold;
   color: #2c3e50;
   text-align: center;
+  width: 100%;
 }
 
 h4 {
@@ -16,7 +16,6 @@ h4 {
   font-weight: bold;
   color: #2c3e50;
 }
-
 
 hr {
   overflow: visible;
@@ -42,52 +41,58 @@ hr {
   width: 50%;
 }
 
+.bg-dark {
+  background-color: #050301 !important;
+}
+
+.navbarAfter {
+  background-color: #004040 !important;
+}
+
+.aboutMe {
+  width: 100%;
+}
+
 .jumbotron {
   background-image: url("https://images.unsplash.com/photo-1587133599421-40a3cd84831b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
   background-size: cover;
   height: 100vh;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
+  border-radius: 0%;
+  color: #004040;
+  text-transform: uppercase;
 }
 
-.jumbotron h2{
-  margin-top:50%; 
-  left:10px;
-  color: #004040;
- }
 
 .navbar {
   margin-bottom: 0px;
 }
 
-
-.thumbnail {
+.img-thumbnail {
   border: none;
 }
 
-.contact_projects {
-  background-color: #eee;
+.container-fluid {
+  max-width: 80%;
 }
 
-.social , .contact{
-  font-size: 2.0rem;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.contact {
+  background-color: #eee;
   text-align: center;
 }
 
+.icons {
+  margin: 10px;
+}
+
+.card {
+  margin: 20px;
+}
 
 #soon {
   text-align: center;
   font-weight: bold;
   font-style: italic;
   color: darkmagenta;
-}
-
-
-.colorGame {
-  text-align: center;
-  font-size: 2.0rem;
-  font-weight: bold;
 }

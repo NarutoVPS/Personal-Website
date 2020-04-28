@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
@@ -11,129 +11,117 @@
     <title>Welcome</title>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Ved Prakash</a>
-          </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#project">Projects</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-      <div class="jumbotron">
-        <div class="container insideJumbo">
-          <h2>WELCOME</h2>
-        </div>
-      </div>
-
-    <div class="container toStyle" id="about">
-        <div class="row">
-          <h1>About Me</h1>
-          <hr>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 ">
-            <div class="thumbnail">
-              <img src="img/Me.jpg" alt="Its me">
-            </div>
-          </div>
-
-          <div class="col-lg-4 ">
-            <div>
-              <br>
-              <h4>HEY THERE!</h4>
-              <br>
-              <p class="quote">You have reached my personal website.I am a 2nd year Engineering Student(CS). <br>This is a website that I am building from scratch as a project.
-                I will be updating this as I get more comfortable with CSS and Javascript.
-              </p>
-              <p>My interests includes:</p>
-              <ul>
-                  <li>Artificial Intelligence and Machine Learning</li>
-                  <li>Programming (In general)</li>
-                  <li>Web Development</li>
-                  <li>Automation</li>
-              </ul>
-              <br>
-            </div>
-          </div>
-
-          <div class="col-lg-4 ">
-            <div>
-              <br>
-              <h4>HOBBIES</h4>
-              <br>
-              <p>When I am free and not coding, I may be doing any of the following activities:</p>
-              <ul>
-                  <li>I love watching <strong>anime.</strong></li>
-                  <li>I day dream a lot 😂.</li>
-                  <li>I sometimes take a <strong>walk</strong> (preferably alone)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="contact_projects">
-      <div class="row" style="text-align: center;">
-        <h1>Stalk</h1>
-      </div>
-
-      <div class="contact">
-        <p>Feel free to stalk me on :-</p>
-        <ul class="social">
-          <li>
-            <a href="https://www.instagram.com/NarutoVPS"><i class="fab fa-instagram fa-3x"></i></a> <p>Instagram</p>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container" id="headerFont">
+      <a class="navbar-brand" href="#">Ved Prakash</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
           </li>
-          <li>
-            <a href="https://www.facebook.com/NarutoVPS?ref=bookmarks"><i class="fab fa-facebook fa-3x"></i></a> <p>Facebook</p>
-          </li>
-          <li>
-            <a href="https://github.com/NarutoVPS"><i class="fab fa-github fa-3x"></i></a> <p>Github</p> 
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
           </li>
         </ul>
       </div>
     </div>
+  </nav>
 
-    <div class="container project" id="project">
-      <div class="row">
-        <h1>Projects</h1>
+  <section class="jumbo">
+    <div class="jumbotron">
+      <h2>Welcome</h2>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container">
+      <div class="row aboutMe">
+        <h1>About Me</h1>
+        <hr>
       </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6 col-xs-6">
-          <div class=" thumbnail colorGame">
-            <p>Guess The rgb Game</p>
-            <a href="Projects/colorGame/game.html"><img src="Projects/colorGame/img/Half.png" height="60%" width="60%" ></a>
+        <div class="col-sm-4 about">
+          <img src="img/Me.jpg" class="img-thumbnail">
+        </div>
+
+        <div class="col-sm-4 about">
+          <br>
+          <h4>HEY THERE!</h4>
+          <br>
+          <p class="quote">You have reached my personal website.I am a 2nd year Engineering Student(CS). <br>This is a website that I am building from scratch as a project.
+            I will be updating this as I get more comfortable with CSS and Javascript.
+          </p>
+          <p>My interests includes:</p>
+          <ul>
+              <li>Artificial Intelligence and Machine Learning</li>
+              <li>Programming (In general)</li>
+              <li>Web Development</li>
+              <li>Automation</li>
+          </ul>
+          <br>
+        </div>
+
+        <div class="col-sm-4 about">
+          <br>
+          <h4>HOBBIES</h4>
+          <br>
+          <p>When I am free and not coding, I may be doing any of the following activities:</p>
+          <ul>
+              <li>I love watching <strong>anime.</strong></li>
+              <li>I day dream a lot 😂.</li>
+              <li>I sometimes take a <strong>walk</strong> (preferably alone)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact">
+    <div>
+      <h1>Stalk</h1>
+      <p>Feel free to stalk me on :-</p>
+    </div>
+
+    <div class="d-flex flex-row contact justify-content-center">
+      <div class="icons"><a href="https://www.instagram.com/NarutoVPS"><i class="fab fa-instagram fa-3x"></i></a></div>
+      <div class="icons"><a href="https://www.facebook.com/NarutoVPS?ref=bookmarks"><i class="fab fa-facebook fa-3x"></i></a></div>
+      <div class="icons"><a href="https://github.com/NarutoVPS"><i class="fab fa-github fa-3x"></i></a></div>
+      <div class="icons"><a href="https://twitter.com/IamNarutoVPS"><i class="fab fa-twitter fa-3x"></i></a></div>
+    </div>
+  </div>
+
+    <section class="projects">
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="Projects/colorGame/img/Half.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Guess The rgb</strong></h5>
+            <a href="#" class="btn btn-primary">Play Game</a>
           </div>
         </div>
 
-        <div class="col-lg-6 col-xs-6">
-          <div class=" thumbnail colorGame">
-            <p>Next One!</p>
-            <a href="#"><img src="https://thumbs.dreamstime.com/b/coming-soon-neon-sign-brick-wall-background-87865865.jpg" height="60%" width="60%"></a>
+        <div class="card" style="width: 18rem;">
+          <img src="https://thumbs.dreamstime.com/b/coming-soon-neon-sign-brick-wall-background-87865865.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Next One!</strong></h5>
+            <a href="#" class="btn btn-primary disabled">Play Game</a>
           </div>
-        </div>    
-        
-        <!-- <div class="col-lg-6">
-
-        </div> -->
+        </div>
       </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-</body>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+  </body>
 </html>

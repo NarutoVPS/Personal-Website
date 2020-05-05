@@ -1,109 +1,76 @@
-body {
-	font-family: "Crimson Text", serif;
-	font-size: 1.3rem;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
-h1 {
-	font-size: 4rem;
-	font-weight: bold;
-	color: #2c3e50;
-	text-align: center;
-	width: 100%;
+nav {
+    background-color: #9d6a89;
+    display: flex;
+    align-items: center;
+    height: 10vh;
 }
 
-h4 {
-	font-size: 2rem;
-	font-weight: bold;
-	color: #2c3e50;
+.container {
+    background-color: #9d6a89;
+    width: 80%;
+    margin: auto;
 }
 
-hr {
-	overflow: visible;
-	height: 30px;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px 0 0 0;
-	border-radius: 20px;
+.navWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
-hr:before {
-	display: block;
-	content: "";
-	height: 30px;
-	margin-top: -31px;
-	border-style: solid;
-	border-color: black;
-	border-width: 0 0 1px 0;
-	border-radius: 20px;
+a {
+    color: #efbc9b;
 }
 
-hr {
-	width: 50%;
+.burger div {
+    height: 3px;
+    width: 30px;
+    background-color: #efbc9b;
+    margin: 5px 0;
 }
 
-.bg-dark {
-	background-color: #050301 !important;
+.burger {
+    margin: 15px;
+    display: none;
+    transition: all 1s ease;
 }
 
-.nav-link {
-	color: #050301 !important;
-}
-
-.navbar-brand {
-	color: #050301 !important;
-}
-
-.navbarAfter {
-	background-color: #004040 !important;
-}
-
-.aboutMe {
-	width: 100%;
-}
-
-.jumbotron {
+/* Cover Image */
+.cover {
 	background-image: url("https://images.unsplash.com/photo-1587133599421-40a3cd84831b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
+	min-height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
-	text-align: center;
-	font-family: "Press Start 2P", cursive;
-	border-radius: 0%;
-	color: #004040;
-	text-transform: uppercase;
+  }
+
+@media only screen and (max-width: 768px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .navWrapper {
+        position: absolute;
+        top: 10vh;
+        flex-direction: column;
+        width: 50%;
+        height: 90vh;
+        transform: translate(-100%);
+        transition: transform 0.6s ease;
+        
+    }
 }
 
-.navbar {
-	margin-bottom: 0px;
-}
-
-.img-thumbnail {
-	border: none;
-}
-
-.container-fluid {
-	max-width: 80%;
-}
-
-.contact {
-	background-color: #eee;
-	text-align: center;
-}
-
-.icons {
-	margin: 10px;
-}
-
-.card {
-	margin: 20px;
-}
-
-#greeting {
-	line-height: 3;
-}
-
-#soon {
-	text-align: center;
-	font-weight: bold;
-	font-style: italic;
-	color: darkmagenta;
+.view {
+    transform: translate(0);
 }

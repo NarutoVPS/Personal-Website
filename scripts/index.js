@@ -1,13 +1,6 @@
-$(function () {
-	$(window).on("scroll", function () {
-		if ($(window).scrollTop() > 100) {
-			$(".bg-dark").addClass("navbarAfter");
-		} else {
-			$(".bg-dark").removeClass("navbarAfter");
-		}
-	});
-});
+var burger = document.querySelector(".burger");
+var nav = document.querySelector("ul");
 
-$("img.img-thumbnail").on("click", function () {
-	alert("No touching !!!");
-});
+burger.addEventListener("click", function(){
+    nav.classList.toggle("view");
+})

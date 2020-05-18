@@ -1,3 +1,13 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,15 +54,6 @@ a {
     display: none;
     transition: all 1s ease;
 }
-
-/* Cover Image */
-.cover {
-	background-image: url("https://images.unsplash.com/photo-1587133599421-40a3cd84831b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
-	min-height: 100vh;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-  }
 
 @media only screen and (max-width: 768px) {
     .burger {

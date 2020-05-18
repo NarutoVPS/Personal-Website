@@ -48,6 +48,8 @@ html {
     list-style: none;
 }
 
+/* Navbar */
+
 nav {
     background-color: #9d6a89;
     display: flex;
@@ -55,13 +57,8 @@ nav {
     height: 10vh;
 }
 
-.container {
-    background-color: #9d6a89;
-    width: 80%;
-    margin: auto;
-}
-
 .navWrapper {
+    background-color: #9d6a89;
     display: flex;
     justify-content: space-around;
     align-items: center;

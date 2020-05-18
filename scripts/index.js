@@ -1,6 +1,7 @@
+// navbar
 var burger = document.querySelector(".burger");
-var nav = document.querySelector("ul");
+var navItem = document.querySelector("nav ul");
 
 burger.addEventListener("click", function(){
-    nav.classList.toggle("view");
+    navItem.classList.toggle("view");
 })

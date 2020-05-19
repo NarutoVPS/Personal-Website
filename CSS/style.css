@@ -7,7 +7,11 @@ html {
     padding: 0;
     text-decoration: none;
     font-family: 'Crimson Text', serif;
-    color: #212529;
+}
+
+body {
+    background-color: #cbf7ed;
+    color: #23395b;
 }
 
 /* Container */
@@ -37,19 +41,19 @@ html {
     display: flex;
     flex-direction: row;
     list-style: none;
-    /* justify-content: center; */
 }
 
 /* Title */
 .title {
+    color: #263238;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 /* Navbar */
 
 nav {
-    background-color: #9d6a89;
+    background-color: #23395b;
     display: flex;
     align-items: center;
     height: 10vh;
@@ -60,7 +64,7 @@ nav {
 
 .navWrapper {
     /* position: relative; */
-    background-color: #9d6a89;
+    background-color: #23395b;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -89,7 +93,7 @@ a {
 
 /* Cover */
 .cover {
-    height: 90vh;
+    height: 100vh;
     background: url("https://images.unsplash.com/photo-1587133599421-40a3cd84831b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
     background-size: cover;
     background-position: center;
@@ -110,7 +114,8 @@ a {
     display: block;
     margin: auto;
     /* default image height */
-    max-height: 650px;
+    max-height: 600px;
+    border-radius: 10px;
 }
 
 .about li {
@@ -130,7 +135,7 @@ a {
         width: 50%;
         height: 90vh;
         transform: translate(-100%);
-        transition: transform 0.6s ease;
+        transition: transform 0.5s ease;
     }
 
     .wrapper {
@@ -168,6 +173,7 @@ a {
     .intro, .hobbies {
         margin-right: 5%;
         flex: 0 0 45%;
+        /* background-color: #8ea8c3; */
     }
 }
 

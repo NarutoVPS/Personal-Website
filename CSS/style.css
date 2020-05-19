@@ -19,6 +19,7 @@ body {
     max-width: 80%;
     margin-right: auto;
     margin-left: auto;
+    padding: 20px 0;
   }
   @media (min-width: 768px) {
     .container {
@@ -47,7 +48,30 @@ body {
 .title {
     color: #263238;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+}
+
+/* hr */
+hr {
+	overflow: visible;
+	height: 30px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin: 0 25%;
+    width: 50%;
+}
+
+hr:before {
+	display: block;
+	content: "";
+	height: 30px;
+	margin-top: -31px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 1px 0;
+	border-radius: 20px;
 }
 
 /* Navbar */
@@ -74,7 +98,7 @@ nav {
     font-size: 2.0rem;
 }
 
-a {
+nav a {
     color: #efbc9b;
 }
 
@@ -120,6 +144,25 @@ a {
 
 .about li {
     margin-left: 50px;
+}
+
+/* Stalk */
+.stalk {
+    background-color: #eee;
+}
+
+.stalk .wrapper {
+    justify-content: center;
+} 
+
+.icons a {
+    font-size: 1.5em;
+    color: #007bff;
+    margin: 0 10px;
+}
+
+.stalk a:hover {
+    color: #23395b;
 }
 
 /* Mobile devices */

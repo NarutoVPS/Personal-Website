@@ -217,7 +217,6 @@ nav a {
     .intro, .hobbies {
         margin-right: 5%;
         flex: 0 0 45%;
-        /* background-color: #8ea8c3; */
     }
 }
 
@@ -225,6 +224,6 @@ nav a {
 @media only screen and (min-width: 1200px){
     .pic, .intro, .hobbies {
         margin-right: 4%;
-        flex: 0 0 27%;
+        flex: 0 0 29.33%;
     }
 }

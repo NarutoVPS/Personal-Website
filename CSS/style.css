@@ -155,6 +155,7 @@ nav a {
 /* Stalk */
 .stalk {
     background-color: #eee;
+    padding-bottom: 30px;
 }
 
 .stalk .wrapper {
@@ -169,6 +170,38 @@ nav a {
 
 .stalk a:hover {
     color: #23395b;
+}
+
+/* Projects */
+.projects {
+    padding: 30px 0;
+}
+
+.projects .wrapper{
+    justify-content: center;
+}
+
+.projects img {
+    height: 300px;
+    width: 300px;
+    border-radius: 60%;
+}
+
+.projects h3{
+    margin-top: 15px;
+}
+
+.projects [class*="project"]{
+    color: #2c3e50;
+    text-align: center;
+    font-size: 1.5em;
+    margin-right: 5%;
+    flex: 0 0 40%;
+}
+
+.projects hr {
+    margin: 0 35%;
+    width: 30%;
 }
 
 /* Mobile devices */
@@ -231,4 +264,5 @@ nav a {
         margin-right: 4%;
         flex: 0 0 29.33%;
     }
+
 }

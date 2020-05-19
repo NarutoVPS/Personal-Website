@@ -12,3 +12,14 @@ var myPic = document.querySelector(".pic img");
 myPic.addEventListener("click", function () {
     alert("No Touching!!!");
 })
+
+// Navbar Scroll
+$(function () {
+	$(window).on("scroll", function () {
+		if ($(window).scrollTop() > 100) {
+			$("nav").addClass("navAppear");
+		} else {
+			$("nav").removeClass("navAppear");
+		}
+	});
+});

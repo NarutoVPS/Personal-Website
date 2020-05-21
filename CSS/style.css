@@ -204,15 +204,6 @@ nav a {
     width: 30%;
 }
 
-.projects a{
-    color: #007bff;
-    text-decoration: none;
-}
-
-.projects a:hover {
-    color: #2c3e50
-}
-
 /* Mobile devices */
 @media only screen and (max-width: 768px){
     .burger {

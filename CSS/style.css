@@ -84,12 +84,7 @@ nav {
     height: 10vh;
     width: 100%;
     position: fixed;
-    transition: all 0.5s ease;
-    transform: translateY(-10vh);
-}
-
-.navAppear {
-    transform: none;
+    /* transform: translateY(-10vh); */
 }
 
 .navWrapper {

@@ -196,7 +196,7 @@ nav a {
     text-align: center;
     font-size: 1.5em;
     margin-right: 5%;
-    flex: 0 0 28.33%;
+    flex: 0 0 40%;
 }
 
 .projects hr {
@@ -233,12 +233,6 @@ nav a {
     .pic img {
         max-height: 400px;
     }
-
-    .projects [class*="project"]{
-        flex: 0 0 80%;
-        margin: auto;
-        margin-bottom: 70px;
-    }
 }
 
 .view {
@@ -261,16 +255,6 @@ nav a {
     .intro, .hobbies {
         margin-right: 5%;
         flex: 0 0 45%;
-    }
-
-    .projectRGB, .projectConquer {
-        flex: 0 0 45% !important;
-        margin-bottom: 70px;
-    }
-
-    .projectComing {
-        flex: 0 0 100% !important;
-        margin: 0 auto;
     }
 }
 

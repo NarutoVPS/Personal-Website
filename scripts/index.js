@@ -25,6 +25,18 @@ $(function () {
 });
 
 // Dark Theme
+let dark = false;
 $('nav ul i').on("click", function(){
 	$('body').toggleClass("dark-mode");
+	if (!dark){
+		$(".title").css("color", "#007bff");
+		$("nav, .navWrapper").css("backgroundColor", "#12171a");
+		$(".stalk").css("background", "#1e1e30");
+		$(".stalk p").css("color", "#6c757d")
+		$(".icons a").css("color", "#23395b")
+		$(".stalk a:hover").css("color", "#28a745")
+	}
+
+	dark = false;
 });
+

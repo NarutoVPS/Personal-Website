@@ -31,12 +31,24 @@ $('nav ul i').on("click", function(){
 	if (!dark){
 		$(".title").css("color", "#007bff");
 		$("nav, .navWrapper").css("backgroundColor", "#12171a");
+		$("nav a").css("color", "#ff073a");
 		$(".stalk").css("background", "#1e1e30");
 		$(".stalk p").css("color", "#6c757d")
 		$(".icons a").css("color", "#23395b")
-		$(".stalk a:hover").css("color", "#28a745")
+		$(".projects a").css("color", "#9673b9");
+		dark = true;
+	}
+	else {
+		$(".title").css("color", "#2c3e50");
+		$("nav, .navWrapper").css("backgroundColor", "#23395b");
+		$("nav a").css("color", "#efbc9b");
+		$(".stalk").css("background", "#eee");
+		$(".stalk p").css("color", "black")
+		$(".icons a").css("color", "#007bff")
+		$(".projects a").css("color", "#007bff");
+		dark = false;
 	}
 
-	dark = false;
+	
 });
 

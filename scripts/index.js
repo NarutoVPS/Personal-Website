@@ -23,3 +23,8 @@ $(function () {
 		}
 	});
 });
+
+// Dark Theme
+$('nav ul i').on("click", function(){
+	$('body').toggleClass("dark-mode");
+});

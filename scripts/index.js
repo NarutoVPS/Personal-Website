@@ -48,7 +48,5 @@ $('nav ul i').on("click", function(){
 		$(".projects a").css("color", "#007bff");
 		dark = false;
 	}
-
-	
 });
 

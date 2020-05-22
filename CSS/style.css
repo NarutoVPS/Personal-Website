@@ -15,6 +15,11 @@ body {
     transition: all 0.5s ease;
 }
 
+.dark-mode {
+    background-color: #161625;
+    color: #6c757d;
+}
+
 /* Container */
 .container {
     max-width: 80%;

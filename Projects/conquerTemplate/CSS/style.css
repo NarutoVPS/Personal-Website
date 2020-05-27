@@ -1,13 +1,10 @@
-html {
-	box-sizing: border-box;
-}
-
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Oxygen', sans-serif;
+    box-sizing: border-box;
 }
 
 /* Fonts */
@@ -34,6 +31,12 @@ p, h2 {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 1170px;
+  }
+  @media (max-width: 767px){
+      .container {
+          width: 90%;
+      }
   }
   @media (min-width: 768px) {
     .container {
@@ -47,7 +50,7 @@ p, h2 {
   }
   @media (min-width: 1200px) {
     .container {
-      width: 60%;
+      width: 80%;
     }
   }
 
@@ -147,6 +150,8 @@ button:hover {
 /* Navbar */
 .navbar {
     background-color: #383e4c;
+    width: 100vw;
+    position: fixed;
     height: 8vh;
 }
 
@@ -182,7 +187,7 @@ ul li a button:hover {
     /* background: ; */
     width: 100vw;
     height: 60vh;
-    background-image: url("../img/bg-1.jpg");
+    background-image: url("../img/bg-1-min.jpg");
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -207,7 +212,6 @@ div.section1 div.wrapper{
     align-items: flex-start;
     justify-content: space-evenly;
     margin: 8vh 0;
-    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -239,10 +243,6 @@ div.section1 div.wrapper{
     object-fit: contain;
 }
 
-/* h2, p{
-    padding: 3%;
-} */
-
 /* Buttons inside Post */
 
 [class*="post"] a {
@@ -253,7 +253,7 @@ div.section1 div.wrapper{
 /* Section 2 */
 .section2 {
     height: 300px;
-    background-image: url("../img/bg-2.jpg");
+    background-image: url("../img/bg-2-min.jpg");
     color: white;
     position: relative;
     text-align: center;
@@ -266,11 +266,16 @@ div.section1 div.wrapper{
     transform: translate(-50%, -50%);
 }
 
+.section2 p {
+    font-size: 18px;
+}
+
 /* Section 3 */
 
 div.section3.wrapper {
     flex-wrap: wrap;
     margin-top: 8vh;
+    justify-content: space-evenly;
 }
 
 .sec3Image1-1 {
@@ -290,7 +295,7 @@ div.section3.wrapper {
 }
 
 .sec3Image2-1 {
-    background: url("../img/4-5.jpg");
+    background: url("../img/4-5-min.jpg");
 }
 
 [class*="sec3Image"] {
@@ -315,73 +320,227 @@ div.section3.wrapper {
 .post, .post2, .sec3Post, .sec3PostBig {
     background-color: #f2f2f2;
     margin-right: 2%;
-    margin-bottom: 5%;
 }
+
+/* For individual posts */
+
+.post {
+    margin-bottom: 60px;
+}
+
+.sec3PostBig {
+    margin-top: 30px;
+    margin-bottom: 8vh;
+}
+
 
 /* Disclaimer */
 .disclaimer {
+    margin: 30px 0;
     text-align: center;
     line-height: 1px;
 }
 
-/* SmallScreen Erroe */
 
-.smallScreen{
-    text-align: center;
-    display: none;
+/* Contact Form */
+
+.contactForm {
+    height: 500px;
+    background: url("../img/bg-3-min.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
 }
 
-/* Media query for mobile devices */
+.form .wrapper {
+    justify-content: start;
+    flex-wrap: wrap;
+}
 
-@media only screen and (max-width: 580px){
-    [class*="post"] {
-        margin-bottom: 10%;
-        flex: 0 0 90%
+.form {
+    max-width: 720px !important;
+}
+
+form {
+    flex: 0 0 46%;
+}
+
+.form input {
+    background: rgba(242, 242, 242, 0.4);
+    color: #000;
+    border: none;
+    padding: 6px 12px;
+    height: 35px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.form .subject input{
+    margin-bottom: 0;
+}
+
+.textArea {
+    flex: 0 0 46%;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form p {
+    background: rgba(242, 242, 242, 0.4);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.form textarea {
+    display: block;
+    background: rgba(242, 242, 242, 0.4);
+    color: #000;
+    padding: 6px 12px;
+    height: 135px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.form textarea:focus {
+    outline: none;
+}
+
+.form input::placeholder, textarea::placeholder {
+    color: #000;
+}
+
+#contact-form-heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: normal;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #000;
+}
+
+/* Default flex sizes */
+
+.post {
+    flex: 0 0 31.33%;
+}
+
+.post2 {
+    flex: 0 0 48%;
+}
+
+.sec3Post {
+    flex: 0 0 23%;
+}
+
+.sec3PostBig {
+    flex: 0 0 98%;   
+}
+
+/* Media query for small devices */
+
+@media only screen and (max-width: 768px){
+    .coverText {
+        font-size: 1.8em;
+    }
+
+    .post {
+        flex: 0 0 100%;
+        max-width: 360px;
+        margin-bottom: 30px;
+    }
+
+    .post2 {
+        flex: 0 0 100%;
+        max-width: 555px;
+    }
+
+    #post4 {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    #post5 {
+        margin-bottom: 35px;
+    }
+
+    .sec3Post {
+        flex: 0 0 100%;
+        max-width: 260px;
+        margin-bottom: 30px;
+    }
+
+    .sec3PostBig {
+        flex: 0 0 100%;   
+    }
+
+    nav {
+        display: none;
+    }
+
+    .form .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contactForm {
+        height: 700px;
+    }
+
+    .form .textArea {
+        margin-top: 15px;
+        width: 100%;
+        max-width: 696px;
+    }
+
+    form, .textArea {
+        flex: 0 0 100%;
+    }
+
+    .contactForm form {
+        width: 100%;
+        max-width: 696px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 999px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .sec3Post {
+        flex: 0 0 48%;
+        max-width: 260px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #post6, #post7 {
+        margin-bottom: 30px;
     }
 }
 
 /* Media query for tablets */
 
-@media only screen and (min-width: 581px) and (max-width: 1199px){
-    .post {
-        flex: 0 0 50% !important;
-    }
-
-    .post2 {
-        flex: 0 0 80%;
-    }
-
-    .sec3Post {
-        flex: 0 0 40%;
-    }
-}
-
-/* Media query for big screens */
-
-@media only screen and (min-width: 1200px){
-    .post {
-        flex: 0 0 31.33% !important;
-    }
-    .post2 {
-        flex: 0 0 48% !important;
-    }
-
-    .sec3Post {
-        flex: 0 0 23% !important;
-    }
-
-    .sec3PostBig {
-        flex: 0 0 98% !important;   
-    }
-}
-
-@media only screen and (max-width: 1000px){
-    .failsafe {
-        display: none;
-    }
-
-    .smallScreen{
-        display: block;
+@media only screen and (min-width: 1000px) and (max-width: 1199px){
+    .container {
+        max-width: 970px;
     }
 
 }
+
+/* To allign textArea correctly */
+@media only screen and (min-width: 769px){
+    .form textarea {
+        margin-left: 55px;
+    }
+}
+

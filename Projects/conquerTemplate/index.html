@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <div class="failsafe">
     <!-- Navbar -->
     <nav class="navbar">
         <ul class="wrapper container">
@@ -33,7 +32,7 @@
 
     <div class="container section1">
         <div class="wrapper">
-            <div class="post">
+            <div class="post" id="post1">
                 <div class="postImage1-1">
                     
                 </div>
@@ -46,7 +45,7 @@
 
                 <a class="" href="#"><button class="btn-green" type="button">Button Green</button></a>
             </div>
-            <div class="post">
+            <div class="post" id="post2">
                 <div class="postImage1-2">
                     
                 </div>                
@@ -58,7 +57,7 @@
                 </span>
                 <a class="" href="#"><button class="btn-blue" type="button">Button Blue</button></a>
             </div>
-            <div class="post">
+            <div class="post" id="post3">
                 <div class="postImage1-3">
                     
                 </div>               
@@ -70,7 +69,7 @@
                 </span>
                 <a class="" href="#"><button class="btn-red" type="button">Button Red</button></a>
             </div>
-            <div class="post2">
+            <div class="post2" id="post4">
                 <div class="postImage2-1">
 
                 </div>
@@ -80,7 +79,7 @@
                     <p>Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus.</p>
                 </span>
             </div>
-            <div class="post2">
+            <div class="post2" id="post5">
                 <div class="postImage2-2">
                     
                 </div>
@@ -101,8 +100,9 @@
             <h1>
                 Our Services
             </h1>
-            <p>
-                Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.
+            <p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id <br>
+                felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. <br>
+                Etiam a mi quis arcu varius condimentum.
             </p>
         </div>
     </div>
@@ -110,7 +110,7 @@
     <!-- Section 3 -->
 
     <div class="section3 container wrapper">
-        <div class="sec3Post">
+        <div class="sec3Post" id="post6">
             <div class="sec3Image1-1">
 
             </div>
@@ -121,7 +121,7 @@
                 </p>
             </span>
         </div>
-        <div class="sec3Post">
+        <div class="sec3Post" id="post7">
             <div class="sec3Image1-2">
 
             </div>
@@ -133,7 +133,7 @@
                 <a href=""><button class="btn-light">Read It</button></a>
             </span>
         </div>
-        <div class="sec3Post">
+        <div class="sec3Post" id="post8">
             <div class="sec3Image1-3">
 
             </div>
@@ -144,7 +144,7 @@
                 </p>
             </span>
         </div>
-        <div class="sec3Post">
+        <div class="sec3Post" id="post9">
             <div class="sec3Image1-4">
 
             </div>
@@ -156,7 +156,7 @@
                 <a href=""><button class="btn-light">Details</button></a>
             </span>
         </div>
-        <div class="sec3PostBig">
+        <div class="sec3PostBig" id="post10">
             <div class="sec3Image2-1">
 
             </div>
@@ -173,6 +173,38 @@
         </div>
     </div>
 
+    <!-- Contact Form -->
+
+    <div class="contactForm parallax">
+        <div class="form container centered">
+            <h1 id="contact-form-heading">Contact Form</h1>
+            <p>
+                Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id <br>
+                felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. <br>
+                Etiam a mi quis arcu varius condimentum.
+            </p>
+            <div class="inputField wrapper">
+                <form action="GET">
+                    <div class="name">
+                        <input type="text" placeholder="Name" size="50">
+                    </div>
+                    <div class="email">
+                        <input type="email" placeholder="Email" size="50">
+                    </div>
+                    <div class="subject">
+                        <input type="text" placeholder="Subject" size="50">
+                    </div>
+                </form>
+                <div class="textArea">
+                    <textarea name="messege" cols="6" placeholder="Your Messege here...">
+                    </textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disclaimer -->
+
     <div class="disclaimer">
         <i>
             <h2>Under Development</h2>
@@ -181,12 +213,6 @@
             <p>This template is the recreation of popular Conquer Template. <br>
             Unlike original template, this version doesn't use any bootstrap. Everything is written in pure HTML, CSS and Javascript.</p>
         </i>
-    </div>
-    </div>
-
-    <div class="smallScreen">
-        <h1>Sorry !</h1>
-        <p>This page is currently only optimised to be viewed in Laptops/Desktops screeen</p>
     </div>
 </body>
 </html>

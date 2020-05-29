@@ -130,7 +130,7 @@ nav a {
 /* Cover */
 .cover {
     height: 100vh;
-    background: url("../img/coverPage.jpeg");
+    background: url("../img/coverPage-min.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

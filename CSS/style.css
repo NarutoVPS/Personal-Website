@@ -130,7 +130,7 @@ nav a {
 /* Cover */
 .cover {
     height: 100vh;
-    background: url("https://images.unsplash.com/photo-1587133599421-40a3cd84831b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
+    background: url("../img/coverPage.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

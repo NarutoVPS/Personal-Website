@@ -2,12 +2,26 @@
     transition: all 1s ease;
 }
 
+html {
+    background-color: #406E8E;
+    color: #6c757d;
+}
+
 .textCenter {
     text-align: center;
 }
 
 .userInput {
     margin: 0 5% !important;
+}
+
+input {
+    background-color: #161625 !important;
+    color: #6c757d !important;
+}
+
+input::placeholder {
+    color: #6c757d !important;
 }
 
 .heading {
@@ -19,10 +33,27 @@
     min-height: 60vh;
 }
 
-.creator {
-    margin-bottom: 30px;
+.lyrics, pre {
+    background-color: #161625;
+    color: #6c757d;
 }
 
 #version {
-    color: red;
+    color: #ffdd57;
+}
+
+.response {
+    margin: 0 10px;
+    background-color: #8EA8C3;
+}
+
+hr {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #41414e;
+}
+
+.creator {
+    color: #161625;
+    margin-bottom: 30px;
 }

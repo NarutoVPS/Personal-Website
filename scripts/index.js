@@ -45,7 +45,7 @@ $('nav ul i').on("click", function(){
 		$(".stalk").css("background", "#90C2E7");
 		$(".stalk p").css("color", "black")
 		$(".icons a").css("color", "#007bff")
-		$(".projects a").css("color", "#007bff");
+		$(".projects a").css("color", "#2368b3");
 		dark = false;
 	}
 });

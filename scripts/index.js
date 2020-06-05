@@ -42,7 +42,7 @@ $('nav ul i').on("click", function(){
 		$(".title").css("color", "#2c3e50");
 		$("nav, .navWrapper").css("backgroundColor", "#23395b");
 		$("nav a").css("color", "#efbc9b");
-		$(".stalk").css("background", "#eee");
+		$(".stalk").css("background", "#90C2E7");
 		$(".stalk p").css("color", "black")
 		$(".icons a").css("color", "#007bff")
 		$(".projects a").css("color", "#007bff");

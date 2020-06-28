@@ -235,6 +235,10 @@ nav a {
     color: #b1571b;
 }
 
+.projects h3 a[class="git-link"]:hover {
+    color: #2c3e50;
+}
+
 /* Mobile devices */
 @media only screen and (max-width: 768px){
     .burger {

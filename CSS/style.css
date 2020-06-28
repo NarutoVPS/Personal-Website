@@ -127,6 +127,10 @@ nav a {
     transition: all 1s ease;
 }
 
+.fa-adjust {
+    cursor: pointer;
+}
+
 /* Cover */
 .cover {
     height: 100vh;

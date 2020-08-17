@@ -73,11 +73,20 @@ let alreadyAdded = (instance) => {
 let addLyrics = (id, instance) =>  {
     lyrics = globalResponse.content[id - 1].lyrics
     lyrics = lyrics.replace("\n", "<br><br>")
-    instance.innerHTML += `
-    <div class="box lyrics">
-        <pre class="content">${lyrics}</pre>
-    </div>`
-    instance.classList.add("done");
+    if (lyrics == "") {
+        instance.innerHTML += `
+        <div class="box lyrics">
+            <pre class="content error">Some error occured in the API !...will be fixed soon 😉</pre>
+        </div>`
+        instance.classList.add("done");   
+    }
+    else {
+        instance.innerHTML += `
+        <div class="box lyrics">
+            <pre class="content">${lyrics}</pre>
+        </div>`
+        instance.classList.add("done");
+    }
     removeItems();
 }
 
@@ -98,3 +107,6 @@ function removeItems() {
         })
     }, 1000)
 }
+
+// api issue alret
+alert("The api LyriChan uses is facing some issues !")
